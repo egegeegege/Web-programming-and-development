@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 25%;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.3);
+            opacity: 0.9;
+            margin: 10px auto;
+            position: relative;
+        }
+        .card:hover{
+            cursor: pointer;
+            opacity: 1;
+        }
+        .product-header>.header{
+            font-size: 20px;
+            color: #605e5e;
+        }
+        .image{
+            width: 100%;
+        }
+        .description{
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .button-box{
+            width: 100%;
+        }
+        .button-box>.add-to-cart{
+            width: 100%;
+            height: 50px;
+            background-color: tomato;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+        }
+        .price-box{
+            display: flex;
+            justify-content: end;
+            margin-bottom: 30px;
+        }
+        .price-box>span{
+            font-size: 28px;
+            color: tomato;
+            font-weight: 600;
+        }
+        .ribbon{
+            position: absolute;
+            top: -21px;
+            right: -5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div>
+            <img src="img/airpods.webp" class="image">
+        </div>
+        <div class="product-header">
+            <h3 class="header">APPLE AirPods Pro (2. Nesil)</h3>
+        </div>
+        <p class="description">Apple markası tüketici elektroniği alanında üretim gerçekleştiren çok güçlü bir teknoloji devi. Marka geliştirdiği yeni ürünleri kullanıcıya sunarken aslında sektörüne yön veren yenilikler de sunuyor.</p>
+        <div class="price-box">
+            <span>10.000 ₺</span>
+        </div>
+        <div class="button-box">
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+        <div class="ribbon">
+            <img src="img/ribbon.png">
+        </div>
+    </div>
+</body>
+</html>

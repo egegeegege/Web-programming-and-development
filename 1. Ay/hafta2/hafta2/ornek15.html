@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: #f89343;
+            font-size: 36px;
+        }
+        h1::after{
+            content: "";
+            display: block;
+            width: 100px;
+            height: 5px;
+            background-color: red;
+        }
+        h1::before{
+            content: "";
+            display: block;
+            width: 100px;
+            height: 5px;
+            background-color: red;
+        }
+        a{
+            font-size: 24px;
+            color: red;
+            text-decoration: none;
+        }
+        a:hover{ /* linkin üzerine gelindiğinde */
+            font-size: 25px;
+            font-weight: 900;
+        }
+        a:active{ /* linke tıklama sırasında */
+            color: purple;
+        }
+        a:visited{ /* linke tıklandıktan sonra */
+            font-size: 24px;
+            color: red;
+        }
+        .kutu-1,.kutu-2{
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        .kutu-1::after{
+            content: "******************";
+            width: 200px;
+            height: 3px;
+            display: block;
+            background-color: #f89343;
+            margin-top: 80px;
+        }
+        .kutu-1:hover{
+            cursor: pointer;
+            box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.3);
+        }
+        .kutu-2{
+            opacity: 0.7;
+        }
+        .kutu-2:hover{
+            cursor: pointer;
+            opacity: 1;
+            transform: rotate(180deg);
+            width: 150px;
+            height: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Pseudo Elementler (Sözde elementler)-->
+    <h1>Başlık</h1>
+    <a href="#a">Pseudo Link</a>
+    <div class="kutu-1">
+        Kutu
+    </div>
+    <div class="kutu-2">
+        kutu
+    </div>
+</body>
+</html>

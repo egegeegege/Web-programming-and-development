@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu-1{
+            background-color: tomato;
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            font-size: 32px;
+        }
+        .kutu-2{
+            background-color: aqua;
+            padding: 30px;
+        }
+        .kutu-2>.yazi{
+            font-size: 32px;
+            color: blue;
+        }
+        .kutu-2>.yazi>.kucuk-metin{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- 3. Yöntem Class -->
+    <div class="kutu-1">
+        <p>Class Yöntemi</p>
+    </div>
+    <div class="kutu-2">
+        <p class="yazi">
+            <span class="kucuk-metin">Class Yöntemi</span>
+        </p>
+    </div>
+    <div class="kutu-1">
+        <p class="yazi">Class Yöntemi</p>
+    </div>
+</body>
+</html>

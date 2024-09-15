@@ -1,0 +1,8 @@
+h1{
+    background-color: tomato;
+    font-size: 32px;
+    color: white;
+}
+div>p{
+    color: tomato;
+}
