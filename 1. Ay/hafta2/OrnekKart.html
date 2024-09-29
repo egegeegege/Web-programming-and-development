@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color:gray;
+        }
+        .card{
+            background-color: aliceblue;
+            width: 410px ;
+            height: 690px;
+            border-radius: 13px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .card:hover{
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            background-color: rgb(80, 114, 141);
+            transition: background-color 0.5s ease;
+        }
+        img{
+           width: 300px;
+           margin:16px 55px; 
+        }
+        .article{
+            font-size: 13px;
+            line-height: 1.5;
+            margin: 20px;
+            padding: 1px;
+            text-align: center;
+        }
+        .article>p{
+            font-weight: 500;
+            color: rgb(108, 160, 180);
+            font-weight: 600;
+        }
+        .baslik{
+            text-align: center;
+            color: rgb(32, 165, 218);
+        }
+        .btn{
+            text-align: center;
+        }
+        .btn>form>button{
+            background-color:  rgb(108, 160, 180);
+            color: aliceblue;
+            border: none;
+            border-radius: 10px;
+            width: 240px;
+            height: 25px;
+        }
+        .btn>form>button:hover{
+            background-color:  rgb(112, 162, 182);
+            color: aliceblue;
+            width: 260px;
+            height: 30px;
+        }
+        .price>p{
+            text-align: end;
+            padding-right: 15px;
+            color:  rgb(32, 165, 218);
+            font-weight: 600;
+            font-size: 17px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .Ribbon{
+           position: absolute;
+           top: -59px;
+           right: -55px;
+        }
+        .Ribbon>img{
+            width: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="card">
+        <div class="Image">
+            <img src="img/e61b7b83fd42c9086abe39255e79b9f0.png" alt="">
+        </div>
+        <div class="baslik">
+            <h2>iPhone 15 Pro Max</h2>
+        </div>
+        <div class="article">
+            <p>Özellikleri. iPhone 15 147.6 x 71.6 x 7.80 mm boyutlarında
+                 ve 171 gram ağırlığındadır. Cihaz ayrıca IP6X toza 
+                 dayanıklılık sertifikası ve IPX8 suya dayanıkılık 
+                 sertifikasına sahiptir.</p>
+        </div>
+        <div class="price">
+            <p>98.000₺</p>
+        </div>
+        <div class="btn">
+            <form action="">
+                <button type="submit">Satın Al</button>
+            </form>
+        </div>
+        <div class="Ribbon">
+            <img src="img/ribbon.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

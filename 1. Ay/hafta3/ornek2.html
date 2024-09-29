@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: tomato;
+            width: 50%;
+            height: 200px;
+            margin-bottom: 100px;
+        }
+        div>p{
+            color: white;
+            font-size: 22px;
+        }
+        @media screen and (max-width: 768px) { /* cihaz boyutu 768 px'in altında düştüğünde css leri uygula */
+            .responsive-kutu{
+                width: 100%;
+            }
+            div{
+                margin-bottom: 5px;
+            }
+            div>p{
+            color: white;
+            font-size: 12px;
+            }
+        }
+        @media screen and (min-width: 1000px) and (max-width: 1200px) {  /* cihaz boyutu 1000-1200px arasında uygulanır.*/
+            div{
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolor eum sint, molestiae corrupti maiores blanditiis non, aperiam, consequuntur ex natus. Harum optio et vero in placeat nemo animi accusantium!</p>
+    </div>
+    <div class="responsive-kutu">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ducimus eum provident alias modi ex optio rem, ad, velit, temporibus officia. Et provident repudiandae eligendi unde consectetur magnam corrupti dicta.</p>
+    </div>
+</body>
+</html>
