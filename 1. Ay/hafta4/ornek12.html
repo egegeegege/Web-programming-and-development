@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function AdiBul(olay){
+            var sonuc = document.getElementById("sonuc")
+            var uzunluk = olay.target.value.length
+            if(uzunluk>6){
+                sonuc.innerHTML = "Şifre uzunluğu uygundur."
+                sonuc.style.color = "green"
+            }
+            else{
+                sonuc.innerHTML = "Şifre uzunluğu uygun değildir. Uzunluk: " + uzunluk
+                sonuc.style.color = "red"
+                sonuc.style.textDecoration = "underline"
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="password" onkeyup="AdiBul(event)" placeholder="Şifreniz">
+    <p id="sonuc"></p>
+</body>
+</html>

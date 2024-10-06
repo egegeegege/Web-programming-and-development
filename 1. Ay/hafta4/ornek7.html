@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // Operatörler
+        /* 
+            Atama Operatörleri
+            = => atama operatörü sağdan sola atama yapar.
+            += => x+=1 => x = x + 1
+            -= => x-=1 => x = x - 1
+            *= => x*=1 => x = x * 1
+            /= => x/=1 => x = x / 1
+
+            Karşılaştırma Operatörleri
+            == => eşit mi ?
+            != => eşit değil mi? Değer olarak eşitliğe bakar.
+            === => denk mi (tam eşitlik) hem tip olarak hem değer olarak eşitliğe bakar.
+            !== => denk değil mi ?
+            < => küçük mü
+            > => büyük mü
+            <= => küçük eşit mi
+            >= => büyük eşit mi
+            Mantıksal Operatörler
+            && => VE
+            || => VEYA
+            ! => Değil
+        */
+        var deger1 = 10
+        var deger2 = "12"
+        console.log(deger1 == deger2) // eşit mi ?
+        console.log(deger1 === deger2) // denk mi ?
+
+        // Mantıksal Operatörler
+        var s1 = 5
+        // && - AND 
+        console.log(s1>1 && s1>3) // True - True => True
+        console.log(s1>1 && s1>6) // True - False => False
+        console.log(s1>6 && s1>3) // False - True => False
+        console.log(s1>8 && s1>9) // False - False => False
+        // || - OR
+        console.log(s1>1 || s1>3) // True - True => True
+        console.log(s1>1 || s1>6) // True - False => True
+        console.log(s1>6 || s1>3) // False - True => True
+        console.log(s1>8 || s1>9) // False - False => False
+        
+        document.write(s1)
+        // NOT => !
+        var sonuc = true
+        console.log(!sonuc)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

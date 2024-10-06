@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Fonksiyonlar modüler işleri gerçekleştirmek için kullandığımız yapılardır.
+        function VoidFonksiyon(){ // fonksiyon tanımı
+            console.log("Void Fonksiyon")
+        }
+
+        VoidFonksiyon() // fonksiyonu çağırma
+
+        function GeriyeDegerDonduren(){
+            return 10
+        }
+
+        const Fonksiyon = () => { // Ecma script 6 ile beraber geldi.
+            alert("Arrow Function")
+        } 
+
+        // Fonksiyon()
+
+        var deger = GeriyeDegerDonduren()
+        console.log("Geriye değer döndüren",deger)
+
+        // Parametre alan fonksiyonlar
+        function Toplam(sayi1,sayi2){
+            var toplam = sayi1 + sayi2
+            console.log(toplam)
+        }
+
+        Toplam(10,20)
+
+        function ReturnToplam(sayi1,sayi2){
+            return sayi1 + sayi2
+        }
+        console.log(ReturnToplam(20,30))
+
+        // Spread - Rest Operatör => ...
+        function Sum(...sayilar) {  // rest operatör - belirsiz sayıda parametre alır ve bu parametreleri bir dizide toplar.
+            console.log(sayilar)
+            var toplam = 0
+            for (let i = 0; i < sayilar.length; i++) {
+                toplam += sayilar[i]  
+            }
+            console.log(toplam)
+         }
+
+         Sum(10,20,30,50,100)
+
+         // Spread operatör => içine yayma
+         var kopya = [5,7]
+         const dizi = [10,20,30]
+         kopya = [...kopya,...dizi]
+         console.log(kopya)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

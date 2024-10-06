@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        function Uyari(){
+            alert("Merhaba Buttona tıkladınız!")
+        }
+        function Message(){
+            alert("Merhaba ben mesaj")
+        }
+        function Degisti(){
+            console.log("Değişti")
+        }
+    </script>
+</head>
+<body>
+    <!-- eventler onclick, ondblclick, onmouseover, onmouseout-->
+    <button onclick="Uyari()">Tıkla Uyarıyı Gör</button>
+    <button ondblclick="Uyari()">Çift Tıkla Uyarıyı Gör</button>
+    <div onclick="Uyari()">
+        Hello
+    </div>
+    <div onclick="alert('Fonksiyonsuz')">
+
+    </div>
+    <p onmouseover="Message()">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur perspiciatis tempora corrupti? Eos consectetur mollitia placeat porro quos ipsum nam illum, voluptatibus tenetur earum. At perspiciatis aspernatur corrupti rem voluptatibus!</p>
+    <input type="text" onkeyup="Degisti()">
+</body>
+</html>

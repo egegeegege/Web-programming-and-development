@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // Değişkenler (Variables)
+        // Data structure (Veri yapısı) => JS data protected bir dil değildir!!
+        // Data tipleri => string, number, boolean, object, undefined, symbol
+        var degisken = "JS" // var tüm tipleri karşılar içine hangi tipte bir değer atarsak değişkenin tipi o olur.
+        console.log(degisken)
+        console.log(typeof degisken) // typeof degisken tipini verir. string
+        var sayi = 10 
+        console.log(sayi)
+        console.log(typeof sayi) // number
+        var deger = true 
+        console.log(deger)
+        console.log(typeof deger) // boolean
+        var dizi = [10,20,30,"tahsin"]
+        console.log(dizi)
+        console.log(typeof dizi) // object
+        var nesne = {ad:"tahsin"}
+        console.log(nesne)
+        console.log(typeof nesne) // object
+        var tanimsiz
+        console.log(tanimsiz)
+        console.log(typeof tanimsiz) // undefined (tanımsız tip)
+        var bos = null
+        console.log(bos)
+        console.log(typeof bos) // null bos degeri tip olarak objecttir.
+
+        // var ifadesi dışında değişken tanımlamak için ES6 ile gelen let ve const ifadeleride vardır
+        let degisken2 = "Ali"
+        console.log(degisken2)
+        const sabit = 3.14
+        // sabit = 10 const ile tanımlanmış değişken sabittir ve tekrar atama yapılamaz.
+        console.log(sabit)
+
+        // var - let - const farkı
+        // var ile let arasındaki fark: var function scope özelliği taşırken, let block scope özelliği taşır.
+        for (let i = 1; i <= 10; i++) { // burası bir block olduğu için sadece bu scope içinde i değişkeni kullanılabilir.
+            console.log(i) 
+        }
+       // console.log(i)  // ReferenceError: i is not defined Tanımlandı hatası alırız.
+
+        for (var j = 1; j <= 10; j++) { // var function scope özelliği taşır bir blockta tanımlansa bile dışarda kullanılabilir.
+            console.log(j) 
+        }
+        console.log(j) 
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

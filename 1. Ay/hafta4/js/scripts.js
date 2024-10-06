@@ -1,0 +1,3 @@
+function Selam(){
+    alert("Selam")
+}
