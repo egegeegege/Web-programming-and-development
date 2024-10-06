@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
+</head>
+<body>
+    <input type="text" placeholder="Sayı 1" id="sayi1"/><br>
+    <input type="text" placeholder="Sayı 2" id="sayi2"/><br>
+    <button onclick="Topla()">Topla</button><br>
+    <p id="sonuc"></p>
+
+    <input type="text" placeholder="sayi1" id="sayi1.">
+    <input type="text" placeholder="sayi2" id="sayi2.">
+    <button onclick="sonucc()">sonucu göster</button><br>
+    <p id="sonucum"></p>
+
     <script>
         function Topla(){
             var sayi1 = parseInt(document.getElementById("sayi1").value)
@@ -15,12 +28,19 @@
                 alert("Lütfen Sayı giriniz.")
             }
         }
+
+        function sonucc(){
+            var sayi1 = parseInt(document.getElementById("sayi1.").value)
+            var sayi2 = parseInt(document.getElementById("sayi2.").value)
+            if(!isNaN(sayi1) && !isNaN(sayi2)){
+                document.getElementById("sonucum").innerHTML =sayi1+sayi2
+        }
+
+        else{
+            alert("Lütfen Sayı giriniz.")
+        }
+    }
+        
     </script>
-</head>
-<body>
-    <input type="text" placeholder="Sayı 1" id="sayi1"/><br>
-    <input type="text" placeholder="Sayı 2" id="sayi2"/><br>
-    <button onclick="Topla()">Topla</button><br>
-    <p id="sonuc"></p>
 </body>
 </html>
