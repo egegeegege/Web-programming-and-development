@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- CDN ile dahil etme -->
+    <title>Document</title>
+    <style>
+        .password-container {
+    position: relative;
+    width: fit-content;
+}
+
+.password-container input {
+    padding-right: 30px; /* Göz ikonuna yer bırakmak için */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+     <!-- Bir password inputu oluşturulacak içinde sağda göz iconu olacak tıklandıkça parola gösterilip gizlencek
+        jqeuery kullanılarak yazılacak. Attribute change araştırılacak. 
+    
+    -->
+    <div class="password-container">
+        <input type="password" id="password" placeholder="Şifrenizi girin">
+        <span class="toggle-password" id="gizle">
+            👁️
+        </span>
+    </div>
+    
+</body>
+</html>
+    <script>
+        $(document).ready(function(){
+            $("#gizle").click(function(){
+                let password =$("#password")
+                let type = password.attr("type") === "password"? "text" : "password";
+                password.attr("type", type);
+            })
+        })
+    
+    </script>

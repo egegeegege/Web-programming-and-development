@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Time(Zamanlayıcı) methodlar
+        // setInterval => bir işi belirli zaman aralıklarıyla yapar. Kendi kendine sonlanmaz. Sonlandırmak için clearInterval kullanılır.
+        // setTimeOut => bir işi belirli bi zaman sonra bir defa yapmaya yarar. Yani geciktirme sağlar.
+        // clearTimeout => intervalları sonlandırmaya yarar.
+        
+        setTimeout(() => { // İşi 1 sn. geç çalıştırır.
+            console.log("Test")
+        }, 2000);
+
+        var timing = setInterval(() => {
+            console.log("Interval Test")
+        }, 200);
+
+        function stopInterval(){
+            clearTimeout(timing) // set interval ı durdurur.
+        }
+    </script>
+</head>
+<body>
+    <button onclick="stopInterval()">Interval Durdur</button>
+</body>
+</html>

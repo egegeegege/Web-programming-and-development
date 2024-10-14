@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="outbox">
+
+    </div>
+</body>
+</html>
+<script>
+    var posts = [
+        {
+            title: "Title1",
+            body: "Body1"
+        },
+        {
+            title: "Title2",
+            body: "Body2"
+        }
+    ]
+
+    function addPost(callback){
+        setTimeout(() => {
+            posts.push({title:"Title3",body:"Body3"})
+            callback()
+        }, 1000);
+    }
+
+    function getAllPost(){    
+        setTimeout(() => {
+            var output = "<ul>"
+            posts.map((post) => {
+                output+=`<li>${post.title} - ${post.body}</li>`
+            })
+            output+="</ul>"
+
+            document.getElementById("outbox").innerHTML = output
+        }, 2000);
+       
+    }
+    addPost(getAllPost())
+    
+
+</script>

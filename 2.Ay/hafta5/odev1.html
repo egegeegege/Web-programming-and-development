@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function CevreHesapla(){
+           var kenar1 = document.getElementById("kenar1").value
+           var kenar2 = document.getElementById("kenar2").value
+           var cevre = null
+           if(isNaN(kenar1) || isNaN(kenar2)){
+                alert("Lütfen sayısal bir değer giriniz")
+           }
+           else{
+                if(kenar1 <= 0 || kenar2 <= 0){
+                    alert("Lütfen sıfır veya sıfırdan küçük değer girmeyiniz")
+                }
+                else if( kenar1 == kenar2){
+                    alert("Kenarlar eşit olamaz")
+                }
+                else{
+                    cevre = (kenar1 * 2) + (kenar2 * 2)
+                }
+           }
+           if(cevre !== null){
+             document.getElementById("sonuc").innerHTML = cevre + "cm'dir."
+           }
+        }
+    </script>
+</head>
+<body>
+    <!--  
+        Ödev1:
+        iki adet inputumuz olacak kenar1 ve kenar2 adlı çevre hesapla buttonuna tıkladığımızda dikdörtgenin çevresini 
+        hesaplayacak ve sayfada bulunan p tagine atacak
+        Not: kenarların sayısal ifade girilmeme durumları kontrol edilecek ve girilmediyse hata verilecek.
+    -->
+    <div>
+        <input type="text" id="kenar1" placeholder="Kenar 1"/>
+    </div>
+    <div>
+        <input type="text" id="kenar2" placeholder="Kenar 2"/>
+    </div>
+    <div>
+        <button onclick="CevreHesapla()">Çevre Hesapla</button>
+    </div>
+    <div>
+        <p id="sonuc"></p>
+    </div>
+</body>
+</html>

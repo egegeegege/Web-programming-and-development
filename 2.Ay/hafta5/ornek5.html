@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Array Iteration & Functions
+        const arabalar = ["Mercedes","BMW","Tesla","Mercedes"]
+        const kisiler = [
+            {
+                ad: "Ahmet",
+                yas: 22
+            },
+            {
+                ad: "Adem",
+                yas: 25
+            },
+            {
+                ad: "Tahsin",
+                yas: 33
+            }
+        ]
+
+        arabalar.forEach(araba => console.log(araba)) // döngü ile dizi içerisinde gezinme
+        arabalar.map(araba => console.log(araba.toUpperCase())) // döngü ile dizi içerisinde gezinme ve değiştirme
+        console.log(arabalar.includes("BMW")) // dizi içerisinde var mı ?
+        var k = kisiler.find(kisi => kisi.yas > 23) // object yada arrayde verilen koşula göre ilk bulduğu değeri döndürür. Eğer koşula maruz kalan arrayin içinde objeler var
+        // ise koşul sonucu her zaman bir object döner.
+        console.log(k)
+        var a = arabalar.find(araba => araba == "Mercedes")
+        console.log(a)
+        var k2 = kisiler.filter(kisi => kisi.yas > 23) // object yada arrayde verilen koşula göre koşula uyan bütün değerleri döndürür. Eğer koşula maruz kalan arrayin içinde objeler var
+        // ise koşul sonucu bir array döner.
+        console.log(k2)
+
+        console.log(arabalar.sort()) // Sıralama A-Z küçükten büyüğe
+        console.log(arabalar.reverse()) // Tersine çevirme
+
+        const sayilar = [10,23,46,20]
+
+        var t = sayilar.reduce((toplam,sayi) => { // kümülatif (yığılmalı) olarak verdiğimiz işlemi gerçekleştirir.
+            return toplam+=sayi
+        })
+
+        console.log(t)
+
+        var sonuc = kisiler.every(kisi => kisi.yas > 25) // verdiğim koşula tüm elemanlar uyuyorsa true uymuyorsa false
+        console.log(sonuc)
+
+        var sonuc = kisiler.some(kisi => kisi.yas > 25) // verdiğim koşula bir eleman bile uyuyorsa true uymuyorsa false
+        console.log(sonuc)
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

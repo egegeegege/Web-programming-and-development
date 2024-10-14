@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="js/jquery.min.js"></script> --> <!-- Download ederek dosyayı import etme -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> CDN ile dahil etme
+    <script>
+        // JQUERY => javascriptin bir kütüphanesidir. Html, css manipülasyonları ve olaylar daha kolay hale gelir.
+        
+        // eleman seç > olay > yapıcağı işi
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert("Buton 1 tıklandı")
+            })
+            $("#btn").click(function(){
+                alert("Buton 2 tıklandı")
+            })
+            $(".tikla").click(function(){
+                alert("Buton 3 tıklandı")
+            })
+        })
+   </script>
+</head>
+<body>
+    <button>Tıkla</button><br>
+    <button id="btn">Tıkla 2</button><br>
+    <button class="tikla">Tıkla 3</button>
+</body>
+</html>
