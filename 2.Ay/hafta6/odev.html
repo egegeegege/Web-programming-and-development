@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- CDN ile dahil etme -->
+    <style>
+        img{
+            width: 25px;
+            position: absolute;
+            right: 10px;
+            top: -2px;
+            cursor: pointer;
+        }
+        #hide{
+            display: none;
+        }
+        input{
+            height: 27px;
+            border-radius: 3px;
+        }
+        .input-box{
+            display: inline;
+            position: relative;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#show").click(function(){
+                $("#pass").attr("type","text")
+                $("#show").css("display","none")
+                $("#hide").css("display","block")
+            })
+            $("#hide").click(function(){
+                $("#pass").attr("type","password")
+                $("#show").css("display","block")
+                $("#hide").css("display","none")
+            })
+        })
+    </script>
+ </head>
+ <body> 
+    <!--
+         Bir password inputu oluşturulacak içinde sağda göz iconu olacak tıklandıkça parola 
+         gösterilip gizlencek jqeuery kullanılarak yazılacak. Attribute change araştırılacak. 
+    -->
+    <div class="input-box">
+        <img src="img/hide-show.png" id="show"/>
+        <img src="img/eye-hide.svg" id="hide"/>
+        <input type="password" id="pass">
+    </div>
+ </body>
+ </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .flip,.panel{
+            background-color: grey;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            text-align: center;
+        }
+        .panel{
+            height: 200px;
+            /* display: none*/
+        }
+        .flip{
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $(".flip").click(function(){
+                // $(".panel").fadeIn() // görünür hale getirir.
+                // $(".panel").fadeOut() // / görünmez hale getirir.
+                $(".panel").fadeToggle(1000)
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="flip">
+        Click to fade in/out panel
+    </div>
+    <div class="panel">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde magni labore beatae modi reiciendis quae maxime quas, voluptatibus incidunt porro, exercitationem itaque. Nulla id, fugiat quia officiis optio incidunt recusandae!
+    </div>
+</body>
+</html>

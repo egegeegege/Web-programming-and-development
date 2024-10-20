@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+    <script>
+        $(document).ready(function(){
+           $(".button-get").click(function(){
+                // Değerleri getirme (GET)
+                console.log($(".value").val()) // değer alma
+                console.log($(".yazi").text()) // yazı alma
+                console.log($(".htmlDeger").html()) // html alma
+           })
+           $(".button-set").click(function(){
+                // Değerleri set etme (SET)
+               $(".value").val("Tahsin") // değeri set etme
+               $(".yazi").text("Merhaba ben set edilmiş Text") // yazı alma
+               $(".htmlDeger").html("<a href=''>Link</a>") // html alma
+           })
+        })
+    </script>
+</head>
+<body>
+    <button class="button-get">
+        GET
+    </button>
+    <button class="button-set">
+        SET
+    </button>
+    <div class="text">
+        <input type="text" class="value" />
+    </div>
+    <p class="yazi">Merhaba ben Text</p>
+    <div class="htmlDeger">
+        <p>
+            <span></span>
+        </p>
+    </div>
+</body>
+</html>

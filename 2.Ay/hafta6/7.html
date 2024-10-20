@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(function(){
+            $("button").click(function(){
+                $.ajax({
+                url: 'https://dummyjson.com/auth/login',
+                type: "POST",
+                dataType: "json",
+                data: {
+                    username: $("#kad").val(),
+                    password: $("#pass").val()
+                },
+                success: function(data){
+                    alert(data.firstName+ " Hoşgeldiniz")
+                },
+                error: function(error){
+                    alert("Giriş yapılamadı")
+                }
+            })
+            })
+           
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" id="kad"><br>
+        <input type="password" id="pass">
+    </div>
+    <button>Giriş Yap</button>
+</body>
+</html>

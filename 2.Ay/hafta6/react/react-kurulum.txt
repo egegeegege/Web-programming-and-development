@@ -1,0 +1,14 @@
+https://nodejs.org/en => lts yi download et
+cmd > node -v > sürümü görmen gerekli
+vs code uzantısı olarak => ES7+ React/Redux/React-Native snippets ekliyoruz.
+kurulum için vs code terminal aç 
+-npm create vite@latest
+- y enter
+- proje adi yaz enter
+- react ı seç Javascript + SWC seç
+ cd proje-adi
+ npm install       
+ npm run dev 
+
+
+projeleri size attığımda node_modules klasörü olmayacak. projenin klasörüne girip npm install yapıyoruz.

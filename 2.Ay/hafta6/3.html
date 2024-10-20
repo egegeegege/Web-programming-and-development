@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .animation-box{
+            width: 200px;
+            height: 200px;
+            border-radius: 350px;
+            background-color: red;
+            position: relative;
+            opacity: 0.3;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".animation-box").animate({
+                    left: "250px",
+                    opacity:"1",
+                    height:"350px",
+                    width:"350px"
+                },3000)
+            })
+        })
+    </script>
+</head>
+<body>
+    <button>Animate</button>
+    <div class="animation-box">
+
+    </div>
+</body>
+</html>

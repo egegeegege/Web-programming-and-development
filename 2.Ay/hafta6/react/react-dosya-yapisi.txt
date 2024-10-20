@@ -1,0 +1,12 @@
+*vite.config.js => vite ve react ile ilgili konfigürasyonları yaparız.
+*package.json => proje adı, sürüm bilgileri, scriptler dev,build vb. 
+ve bağımlılıkların (dependencies) bulunduğu dosyadır. npm install durumu
+package.json olmadan çalışmaz.
+dependencies =>proje build edilip canlıya çıkılma sürecindede kullanılan proje bağımlılıkları
+devDependencies =>proje geliştirme aşamasında kullanılan proje bağımlıkları
+
+* index.html ilk çalışan dosyadır. İçinde script ile main.jsx çağırılmıştır
+index.html in içinde id si root olan bir div vardır.
+* main.jsx index.html deki id si root olan divin içine bir render işlemi gerçekleştirir.
+ilk durumda App.jsx render edilir.
+* Ekranda gördüklerimiz App.jsx tedir.
