@@ -17,13 +17,32 @@ function App() {
     }
   ]
 
+  const isimler = [
+    {
+      isim:"Ege",
+      Soyisim:"Aydın"
+    },
+    {
+      isim:"Cemre",
+      Soyisim:"Akkaya"
+    },
+    {
+      isim:"Taner Talip ",
+      Soyisim:"Yılmaz"
+    },
+    {
+      isim:"Alperen",
+      Soyisim:"Karayol"
+    }
+  ]
+
   return (
     <>
       {
         kisiler.map((kisi,index)=>{
           return(
             <div key={index}>
-              <Kisi name={kisi.ad} age={kisi.yas}  />
+              <Kisi isim={kisi.isim} soyisim={kisi.Soyisim}  />
             </div>
           )
         })

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Kisi({name,age}) {
+function Kisi({isim,soyisim}) {
   return (
     <div>
-        <p>{name} - {age}</p>
+        <p>{isim} - {soyisim}</p>
     </div>
   )
 }
